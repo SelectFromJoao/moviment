@@ -1,0 +1,35 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Movement API",
+        "version": "0.1"
+    },
+    "paths": {
+        "/movement/{id}": {
+            "get": {
+                "operationId": "2a5b357f9f84d022b42a7b533b67ef40",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "Buscar ranking de movimentos por ID",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Successful created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}
