@@ -34,9 +34,7 @@ class MovementController extends Controller
 
         try {
             $service = new MovementService();
-            $teste = $request->All();
-            $data = $service->getMovements($teste);
-     
+            $data = $service->getMovements($request->All());
             return response()->json($data);;
         }catch(Exception $e){
             return response($e, 500)

@@ -4,6 +4,7 @@
 ```
 docker-compose build app
 docker-compose up -d
+docker exec -it movement-App composer install
 ```
 
 - [Swagger da aplicação]
